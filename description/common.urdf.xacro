@@ -146,7 +146,9 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
-
+     <gazebo reference="right_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
     <!-- BÁNH HƯỚNG TRƯỚC (FRONT CASTER WHEEL) -->
     <joint name="front_caster_wheel_joint" type="fixed">
         <parent link="chassis"/>
@@ -194,5 +196,5 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_sphere>
     </link>
-
+    
 </robot>
