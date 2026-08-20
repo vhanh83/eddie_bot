@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<library path="eddie_bot">
+  <class
+    name="eddie_bot/EddieBotSystem"
+    type="eddie_bot::EddieBotSystem"
+    base_class_type="hardware_interface::SystemInterface">
+
+    <description>
+      Eddie Bot ros2_control hardware interface
+    </description>
+
+  </class>
+</library>

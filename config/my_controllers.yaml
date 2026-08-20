@@ -1,0 +1,73 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 30
+    use_sim_time: false
+
+    # Differential drive controller
+    diff_cont:
+      type: diff_drive_controller/DiffDriveController
+
+    # Joint state broadcaster
+    joint_broad:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+
+# ============================================================
+# Differential Drive Controller
+# ============================================================
+
+diff_cont:
+  ros__parameters:
+
+    # Tần số publish odometry
+    publish_rate: 50.0
+
+    # ==========================================================
+    # Frame
+    # ==========================================================
+
+    base_frame_id: base_link
+    odom_frame_id: odom
+
+    # ==========================================================
+    # Wheel joints
+    # ==========================================================
+
+    left_wheel_names:
+      - left_wheel_joint
+
+    right_wheel_names:
+      - right_wheel_joint
+
+    # ==========================================================
+    # Robot dimensions
+    # ==========================================================
+
+    # Khoảng cách giữa tâm 2 bánh (m)
+    wheel_separation: 0.385
+
+    # Bán kính bánh (m)
+    # Nếu bánh đường kính 65 mm:
+    wheel_radius: 0.075
+
+    # ==========================================================
+    # Command velocity
+    # ==========================================================
+
+    use_stamped_vel: false
+
+    cmd_vel_timeout: 0.5
+
+    # ==========================================================
+    # Odometry
+    # ==========================================================
+
+    open_loop: false
+
+    enable_odom_tf: true
+
+    # ==========================================================
+    # Velocity filtering
+    # ==========================================================
+
+    velocity_rolling_window_size: 10
