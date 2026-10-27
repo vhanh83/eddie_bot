@@ -4,7 +4,6 @@
     <xacro:arg name="sim_mode" default="false"/>
 
    <xacro:include filename="common.urdf.xacro"/>
-   <!-- <xacro:include filename="gazebo_control.xacro" /> -->
-    <xacro:include filename="ros2Control.xacro" />
-   <!-- <xacro:include filename="lidar.xacro" /> -->
+   <xacro:include filename="ros2Control.xacro" />
+   <xacro:include filename="$(find eddie_bot)/description/lidar.xacro" />
 </robot>
