@@ -1,0 +1,16 @@
+twist_mux:
+  ros__parameters:
+
+    topics:
+
+      joy:
+        topic: /joy/cmd_vel
+        timeout: 0.5
+        priority: 10
+
+      phone:
+        topic: /phone/cmd_vel
+        timeout: 0.5
+        priority: 20
+
+    locks: []

@@ -44,11 +44,10 @@ diff_cont:
     # ==========================================================
 
     # Khoảng cách giữa tâm 2 bánh (m)
-    wheel_separation: 0.385
+    wheel_separation: 0.39
 
     # Bán kính bánh (m)
-    # Nếu bánh đường kính 65 mm:
-    wheel_radius: 0.075
+    wheel_radius: 0.1524
 
     # ==========================================================
     # Command velocity
