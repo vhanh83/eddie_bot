@@ -46,7 +46,7 @@ def generate_launch_description():
         remappings=[
             (
                 "/cmd_vel",
-                "/diff_cont/cmd_vel_unstamped"
+                "/joy/cmd_vel"
             )
         ],
         output="screen",
